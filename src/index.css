@@ -21,6 +21,6 @@ code {
   max-width: 33dvw;
 }
 
-.pokemonInfoCard > img {
+.pokemonInfoCard > div > img {
   max-width: 75%;
 }

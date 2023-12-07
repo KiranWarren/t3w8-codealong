@@ -1,11 +1,18 @@
 // Display title and image of Pokemon data
 // Data comes from props
 
+import Card from "react-bootstrap/Card";
+
 export default function PokemonInfoCard(props) {
   return (
-    <div className="pokemonInfoCard">
-      <h1>{props.name}</h1>
-      <img src={props.imageUrl} alt="Default front sprite from PokeAPI" />
-    </div>
+    <Card className="pokemonInfoCard">
+      <Card.Body>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Img
+          src={props.imageUrl}
+          alt="Default front sprite from PokeAPI"
+        />
+      </Card.Body>
+    </Card>
   );
 }
